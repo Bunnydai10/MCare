@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/3.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.0/ref/settings/
 """
-import django_heroku
+
 
 import os
 
@@ -24,7 +24,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '^p9-z=dr3ztgd58hf99fy28c4@a&-_a4#@vzh%ckrk5$kpmj2)'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = []
 
@@ -126,5 +126,5 @@ MEDIA_URL = '/media/'
 
 
 
-# Activate Django-Heroku.
-django_heroku.settings(locals())
+
+
